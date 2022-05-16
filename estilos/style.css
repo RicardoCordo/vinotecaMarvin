@@ -149,7 +149,12 @@ align-items: center;
 .imgPromo{
     height: 450px;
     width: 180px;
+    transition-property: all;
+    transition-duration: 3s;
 
+}
+.imgPromo:hover{
+    transform: scale(1.2);
 }
 .vinos{
     display: grid;
@@ -191,7 +196,12 @@ align-items: center;
 .imgVinos{
     height: 400px;
     width: 180px;
+    transition-property: all;
+    transition-duration: 3s;
 
+}
+.imgVinos:hover{
+    transform: scale(1.2);
 }
 
 
@@ -233,7 +243,12 @@ align-items: center;
 .imgChampagne{
     height: 400px;
     width: 180px;
+    transition-property: all;
+    transition-duration: 3s;
 
+}
+.imgChampagne:hover{
+    transform: scale(1.2);
 }
 .destilados{
     display: grid;
@@ -274,7 +289,11 @@ align-items: center;
 .imgDestilados{
     height: 400px;
     width: 180px;
-
+    transition-property: all;
+    transition-duration: 3s;
+}
+.imgDestilados:hover{
+    transform: scale(1.2);
 }
 .footer{
     display: grid;

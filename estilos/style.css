@@ -6,68 +6,40 @@
     margin:0;
 }
 
-header{
-    background-color: rgb(99, 56, 99);
-    border: 3px solid black;
-
+#navbar{
+    font-size: 1cm;
+    font-family: 'Kanit', sans-serif;
 }
-.header{
-    display: flex;
-    flex-direction: row ;
-    text-align: center ;
-}
+.logo{
 
-#logo{
-    top: 0;
     height: 60px;
     width: 60px;
-    margin-left: 0;
+
 }
 
 body{
-    background-color: rgb(152, 76, 224);
-}
-
-nav{ display: flex;
-    align-items: center;
-
-}
-ul li{
-    list-style-type: none;
-}
-nav ul li {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
-nav ul li a{
-    text-decoration:none;
-    color: white;
-    font-size: 1cm;
-    font-family: 'Kanit', sans-serif;
+    background-color: black;
 }
 
 h1{
-    font-size: 1.2cm;
     font-family: 'Kanit', sans-serif;
-    background-color: rgb(112, 23, 196);
+    background-color: rgb(53, 53, 54);
+    color: whitesmoke;
 }
 
 
-#tituloNosotros{
-    color: black;
+h2{
+    color:lightgray;
     background-color: rgb(138, 30, 238);
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 1cm;
-    margin-top: 0;
     margin-bottom: 15px;
     padding-left: 30px;
 }
 .parrafoNosotros{
     font-family: 'Work Sans', sans-serif;
     font-size: 0.8cm;
-    color: rgb(22, 22, 134);
+    color:  rgb(138, 30, 238);
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 5px ;
@@ -77,25 +49,9 @@ h1{
     width: 400px;
     grid-area: nosotros;
 }
-#imgBarra{
-    height: 400px;
-    width: 400px;
-    margin-top: 25px;
-}
-
-#tituloPromociones{ 
-    color: black;
-    background-color: rgb(138, 30, 238);
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 1cm;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-left: 30px;
-}
-
 
 footer{
-    background-color:rgb(99, 56, 99) ;
+    background-color: rgb(53, 53, 54) ;
     color: white;
     font-family: 'Kanit', sans-serif;
     margin-bottom: 0;
@@ -105,10 +61,10 @@ footer{
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-areas: 
-    "nosotros barra";
+    "nosotros carousel";
 }
-.imgBarra{
-    grid-area: barra;
+.carousel-inner{
+    grid-area: carousel;
 }
 
 .promos{
@@ -311,7 +267,7 @@ align-items: center;
 }
 
 @media (max-width:700px){
-    .imgbarra{
+    .imgCarousel{
         width: 100px;
         height: 100px;
     }
@@ -320,7 +276,7 @@ align-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
         grid-template-areas: 
-        "barra"
+        "carousel"
         "nosotros";
     }
     .promos{
@@ -335,9 +291,7 @@ align-items: center;
         align-items: center;
         
         }
-        nav ul li {
-            display: flex;     
-}      
+    
 .vinos{
     display: grid;
 gap: 15px;
@@ -376,7 +330,7 @@ align-items: center;
 }
 
 @media (max-width:500px){
-    .imgbarra{
+    .imgCarousel{
         width: 100px;
         height: 100px;
     }
@@ -385,7 +339,7 @@ align-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
         grid-template-areas: 
-        "barra"
+        "carousel"
         "nosotros";
     }
     .promos{
@@ -403,34 +357,32 @@ align-items: center;
         align-items: center;
         
         }
-        nav ul li {
-            display: flex;     
-}      
+
 .vinos{
     display: grid;
 gap: 5px;
 grid-template-areas: 
 "vinobenja"
 "vinocafa"
-"vinodon "
+"vinodon"
 "vinoluigi"
 "vinoruti"
 "vinosanta"
 "vinotrummal"
-" vinotrummer";
+"vinotrummer";
 text-align: center;
 }
 .champagne{
     display: grid;
 gap: 5px;
 grid-template-areas: 
-"champch "
-"champcr "
+"champch"
+"champcr"
 "champdada"
 "champfe"
 "champla"
-" champnor "
-"champnove "
+"champnor"
+"champnove"
 "champruti";
 text-align: center;
 
@@ -440,9 +392,9 @@ text-align: center;
 gap: 5px;
 grid-template-areas: 
 "ginb"
-"ginal "
+"ginal"
 "ginhen"
-" gintan"
+"gintan"
 "whiskych"
 "whiskyfire"
 "whiskyjack"

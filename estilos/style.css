@@ -21,6 +21,10 @@ body{
     background-color: black;
 }
 
+a:hover{
+    background-color: rgb(138, 30, 238);
+}
+
 h1{
     font-family: 'Kanit', sans-serif;
     background-color: rgb(53, 53, 54);
@@ -250,6 +254,10 @@ align-items: center;
 }
 .imgDestilados:hover{
     transform: scale(1.2);
+}
+
+#boton{
+    margin-left: 20px;
 }
 .footer{
     display: grid;

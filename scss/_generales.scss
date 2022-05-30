@@ -1,0 +1,39 @@
+header{
+    #navbar{
+        font-size: 1cm;
+        font-family: 'Kanit', sans-serif;
+    }
+    .logo{
+        
+        height: 60px;
+        width: 60px;
+    }
+
+    a:hover{
+        background: $color1;
+    }
+
+}
+
+footer{
+    background: $color3 ;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 0;
+    padding: 20px;
+
+    .horarios{
+        grid-area: horarios;
+    }
+    .ubicacion{
+        grid-area: ubicacion;
+    }
+}
+.footer{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "horarios ubicacion";
+    align-items: center;
+}

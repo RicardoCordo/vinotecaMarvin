@@ -1,0 +1,183 @@
+.promos{
+    display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "gaton lolab mumm circusm"
+    "portillom newageb lolaw circusb";
+    align-items: center;
+    
+    }
+    .gatoNegro{
+        grid-area:gaton ;
+    }
+    .lolaBlend{
+        grid-area:lolab ;
+    }
+    .chaMumm{
+        grid-area: mumm;
+    }
+    .portilloM{
+        grid-area:portillom ;
+    }
+    .newageBlanco{
+        grid-area: newageb;
+    }
+    .lolaWhite{
+        grid-area: lolaw;
+    }
+    .circusMalbec{
+        grid-area: circusm;
+    }
+    .circusBlanco{
+        grid-area: circusb;
+    }
+    .imgPromo{
+        height: 450px;
+        width: 180px;
+        transition-property: all;
+        transition-duration: 3s;
+    
+    }
+    .imgPromo:hover{
+        transform: scale(1.2);
+    }
+
+.vinos{
+        display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "vinobenja vinocafa vinodon vinoluigi "
+    "vinoruti vinosanta vinotrummal vinotrummer";
+    align-items: center;
+    
+    }
+    .vinoBenjamin{
+        grid-area:vinobenja;
+    }
+    .vinoCafayate{
+        grid-area:vinocafa ;
+    }
+    .vinoDonvalentin{
+        grid-area: vinodon;
+    }
+    .vinoLuigiboscamalbec{
+        grid-area: vinoluigi;
+    }
+    .vinoRutini{
+        grid-area: vinoruti;
+    }
+    .vinoSantajulia{
+        grid-area: vinosanta;
+    }
+    .vinoTrumpetermalbec{
+        grid-area: vinotrummal;
+    }
+    .vinoTrumpetermerlot{
+        grid-area: vinotrummer;
+    }
+    .imgVinos{
+        height: 400px;
+        width: 180px;
+        transition-property: all;
+        transition-duration: 3s;
+    
+    }
+    .imgVinos:hover{
+        transform: scale(1.2);
+    }   
+    
+.champagne{
+        display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "champch champcr champdada champfe"
+    "champla champnor champnove champruti";
+    align-items: center;
+    
+    }
+    .champagneChandon{
+        grid-area:champch;
+    }
+    .champagneCristal{
+        grid-area:champcr ;
+    }
+    .champagneDada{
+        grid-area: champdada;
+    }
+    .champagneFederico{
+        grid-area: champfe;
+    }
+    .champagneLachapelle{
+        grid-area: champla;
+    }
+    .champagneNorton{
+        grid-area: champnor;
+    }
+    .champagneNovecento{
+        grid-area: champnove;
+    }
+    .champagneRutini{
+        grid-area: champruti;
+    }
+    .imgChampagne{
+        height: 400px;
+        width: 180px;
+        transition-property: all;
+        transition-duration: 3s;
+    
+    }
+    .imgChampagne:hover{
+        transform: scale(1.2);
+    }
+
+.destilados{
+        display: grid;
+    gap: 15px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "ginb ginal ginhen gintan"
+    "whiskych whiskyfire whiskyjack  whiskyred ";
+    align-items: center;
+    
+    }
+    .ginBridhton{
+        grid-area:ginb ;
+    }
+    .ginAlquimista{
+        grid-area:ginal ;
+    }
+    .ginHendricks{
+        grid-area: ginhen;
+    }
+    .ginTanqueray{
+        grid-area: gintan;
+    }
+    .whiskyChivas{
+        grid-area: whiskych;
+    }
+    .whiskyJack{
+        grid-area: whiskyjack;
+    }
+    .whiskeyFireball{
+        grid-area: whiskyfire;
+    }
+    .whiskeyRed{
+        grid-area: whiskyred;
+    }
+    .imgDestilados{
+        height: 400px;
+        width: 180px;
+        transition-property: all;
+        transition-duration: 3s;
+    }
+    .imgDestilados:hover{
+        transform: scale(1.2);
+    }
+    

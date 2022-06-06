@@ -2,17 +2,23 @@ header{
     #navbar{
         font-size: 1cm;
         font-family: 'Kanit', sans-serif;
+        
     }
     .logo{
         
-        height: 60px;
-        width: 60px;
+        @include sizes (60px, 60px);
     }
-
+    a{
+        @extend.bordes;
+    }
     a:hover{
         background: $color1;
     }
 
+}
+
+.bordes{
+    border: 1px solid $color1;
 }
 
 footer{

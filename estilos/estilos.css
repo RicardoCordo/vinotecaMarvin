@@ -15,6 +15,10 @@ header a:hover {
   background: #8a1eee;
 }
 
+.bordes, header a, h1 {
+  border: 1px solid #8a1eee;
+}
+
 footer {
   background: #353536;
   color: white;
@@ -410,10 +414,22 @@ h2 {
   margin-left: 20px;
 }
 
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #C25E30;
+}
+
 @media (max-width: 700px) {
   .imgCarousel {
-    width: 100px;
     height: 100px;
+    width: 100px;
   }
   .seccionNosotros {
     display: -ms-grid;
@@ -472,8 +488,8 @@ h2 {
 
 @media (max-width: 500px) {
   .imgCarousel {
-    width: 100px;
     height: 100px;
+    width: 100px;
   }
   .seccionNosotros {
     display: -ms-grid;

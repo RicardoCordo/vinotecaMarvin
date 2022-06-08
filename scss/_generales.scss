@@ -5,20 +5,17 @@ header{
         
     }
     .logo{
-        
-        @include sizes (60px, 60px);
+        height: 60px;
+        width: 60px;
     }
-    a{
-        @extend.bordes;
-    }
+
     a:hover{
         background: $color1;
     }
-
-}
-
-.bordes{
-    border: 1px solid $color1;
+    a{
+        border-radius: 2cm;
+        border-color: $color1;
+    }
 }
 
 footer{

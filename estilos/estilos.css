@@ -15,8 +15,9 @@ header a:hover {
   background: #8a1eee;
 }
 
-.bordes, header a, h1 {
-  border: 1px solid #8a1eee;
+header a {
+  border-radius: 2cm;
+  border-color: #8a1eee;
 }
 
 footer {
@@ -382,7 +383,7 @@ h2 {
 
 .parrafoNosotros {
   font-family: 'Work Sans', sans-serif;
-  font-size: 0.8cm;
+  font-size: 0.6cm;
   color: #8a1eee;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -412,18 +413,6 @@ h2 {
 
 #boton {
   margin-left: 20px;
-}
-
-.btn--twitter {
-  background-color: #55acee;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: #C25E30;
 }
 
 @media (max-width: 700px) {

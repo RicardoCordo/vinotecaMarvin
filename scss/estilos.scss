@@ -20,7 +20,7 @@ h1{
     font-family: 'Kanit', sans-serif;
     background: $color3;
     color: whitesmoke;
-    @extend.bordes;
+
 }
 
 h2{
@@ -33,7 +33,7 @@ h2{
 }
 .parrafoNosotros{
     font-family: 'Work Sans', sans-serif;
-    font-size: 0.8cm;
+    font-size: 0.6cm;
     color:  $color1;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -59,19 +59,10 @@ h2{
     margin-left: 20px;
 }
 
-$redes:(
-    twitter:#55acee,
-    facebook: #3a5795,
-    instagram: #C25E30,
-);
-@each $red, $color in $redes {
-    .btn--#{$red}{
-        background-color: $color;
-    }
-}
+
 @mixin sizes ($width, $height){
-            height:$height;
-            width:$width;
+        height:$height;
+        width:$width;
 }
 
 @media (max-width:700px){

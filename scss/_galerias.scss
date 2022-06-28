@@ -6,46 +6,50 @@
     grid-template-areas: 
     "gaton lolab mumm circusm"
     "portillom newageb lolaw circusb";
-    align-items: center;
+
     }
     .gatoNegro{
         grid-area:gaton ;
-        
+        border: 3px solid $color1;
     }
     .lolaBlend{
         grid-area:lolab ;
+        border: 3px solid $color1;
     }
     .chaMumm{
         grid-area: mumm;
+        border: 3px solid $color1;
     }
     .portilloM{
         grid-area:portillom ;
+        border: 3px solid $color1;
     }
     .newageBlanco{
         grid-area: newageb;
+        border: 3px solid $color1;
     }
     .lolaWhite{
         grid-area: lolaw;
+        border: 3px solid $color1;
     }
     .circusMalbec{
         grid-area: circusm;
+        border: 3px solid $color1;
     }
     .circusBlanco{
         grid-area: circusb;
+        border: 3px solid $color1;
     }
     .imgPromo{
         height: 450px;
         width: 180px;
-        transition-property: all;
-        transition-duration: 3s;
-    
-    }
-    .imgPromo:hover{
-        transform: scale(1.2);
+
+
     }
 
+
 .vinos{
-        display: grid;
+    display: grid;
     gap: 15px;
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
@@ -53,43 +57,46 @@
     "vinobenja vinocafa vinodon vinoluigi "
     "vinoruti vinosanta vinotrummal vinotrummer";
     align-items: center;
-    
+
     }
     .vinoBenjamin{
         grid-area:vinobenja;
+        border: 3px solid $color1;
+        
     }
     .vinoCafayate{
         grid-area:vinocafa ;
+        border: 3px solid $color1;
     }
     .vinoDonvalentin{
         grid-area: vinodon;
+        border: 3px solid $color1;
     }
     .vinoLuigiboscamalbec{
         grid-area: vinoluigi;
+        border: 3px solid $color1;
     }
     .vinoRutini{
         grid-area: vinoruti;
+        border: 3px solid $color1;
     }
     .vinoSantajulia{
         grid-area: vinosanta;
+        border: 3px solid $color1;
     }
     .vinoTrumpetermalbec{
         grid-area: vinotrummal;
+        border: 3px solid $color1;
     }
     .vinoTrumpetermerlot{
         grid-area: vinotrummer;
+        border: 3px solid $color1;
     }
     .imgVinos{
         height: 400px;
-        width: 180px;
-        transition-property: all;
-        transition-duration: 3s;
-    
+        width: 180px; 
     }
-    .imgVinos:hover{
-        transform: scale(1.2);
-    }   
-    
+
 .champagne{
         display: grid;
     gap: 15px;
@@ -103,41 +110,43 @@
     }
     .champagneChandon{
         grid-area:champch;
+        border: 3px solid $color1;
     }
     .champagneCristal{
         grid-area:champcr ;
+        border: 3px solid $color1;
     }
     .champagneDada{
         grid-area: champdada;
+        border: 3px solid $color1;
     }
     .champagneFederico{
         grid-area: champfe;
+        border: 3px solid $color1;
     }
     .champagneLachapelle{
         grid-area: champla;
+        border: 3px solid $color1;
     }
     .champagneNorton{
         grid-area: champnor;
+        border: 3px solid $color1;
     }
     .champagneNovecento{
         grid-area: champnove;
+        border: 3px solid $color1;
     }
     .champagneRutini{
         grid-area: champruti;
+        border: 3px solid $color1;
     }
     .imgChampagne{
         height: 400px;
         width: 180px;
-        transition-property: all;
-        transition-duration: 3s;
-    
-    }
-    .imgChampagne:hover{
-        transform: scale(1.2);
     }
 
 .destilados{
-        display: grid;
+    display: grid;
     gap: 15px;
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
@@ -149,35 +158,37 @@
     }
     .ginBridhton{
         grid-area:ginb ;
+        border: 3px solid $color1;
     }
     .ginAlquimista{
         grid-area:ginal ;
+        border: 3px solid $color1;
     }
     .ginHendricks{
         grid-area: ginhen;
+        border: 3px solid $color1;
     }
     .ginTanqueray{
         grid-area: gintan;
+        border: 3px solid $color1;
     }
     .whiskyChivas{
         grid-area: whiskych;
+        border: 3px solid $color1;
     }
     .whiskyJack{
         grid-area: whiskyjack;
+        border: 3px solid $color1;
     }
     .whiskeyFireball{
         grid-area: whiskyfire;
+        border: 3px solid $color1;
     }
     .whiskeyRed{
         grid-area: whiskyred;
+       border: 3px solid $color1;
     }
     .imgDestilados{
         height: 400px;
         width: 180px;
-        transition-property: all;
-        transition-duration: 3s;
     }
-    .imgDestilados:hover{
-        transform: scale(1.2);
-    }
-    

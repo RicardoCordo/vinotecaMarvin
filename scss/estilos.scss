@@ -1,6 +1,7 @@
 $color1: rgb(138, 30, 238);
 $color2: black;
 $color3: rgb(53, 53, 54);
+$color4: white;
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Work+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=PT+Sans+Narrow&family=Work+Sans:ital,wght@1,300&display=swap');
@@ -31,10 +32,11 @@ h2{
     margin-bottom: 15px;
     padding-left: 30px;
 }
+
 .parrafoNosotros{
     font-family: 'Work Sans', sans-serif;
     font-size: 0.6cm;
-    color:  $color1;
+    color: $color1;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 5px ;
@@ -58,7 +60,10 @@ h2{
 #boton{
     margin-left: 20px;
 }
-
+.NombItem{
+    color:  $color1;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
 
 @mixin sizes ($width, $height){
         height:$height;
@@ -66,6 +71,7 @@ h2{
 }
 
 @media (max-width:700px){
+
     .imgCarousel{
         @include sizes (100px, 100px);
     }
@@ -86,7 +92,7 @@ h2{
         "mumm circusm"
         "portillom newageb"
         "lolaw circusb";
-        align-items: center;
+
         
         }
     
@@ -99,7 +105,7 @@ grid-template-areas:
 "vinodon vinoluigi"
 "vinoruti vinosanta"
 "vinotrummal vinotrummer";
-align-items: center;
+
 }
 .champagne{
     display: grid;
@@ -110,7 +116,7 @@ grid-template-areas:
 "champdada champfe"
 "champla champnor "
 "champnove champruti";
-align-items: center;
+
 
 }
 .destilados{
@@ -122,12 +128,13 @@ grid-template-areas:
 "ginhen gintan"
 "whiskych whiskyfire"
 "whiskyjack  whiskyred";
-align-items: center;
+
 }
 
 }
 
 @media (max-width:500px){
+
     .imgCarousel{
         @include sizes (100px, 100px);
     }
@@ -141,6 +148,7 @@ align-items: center;
     }
     .promos{
         display: grid;
+        grid-template-columns: 1fr;
         gap: 5px;
         grid-template-areas: 
         "gaton"
@@ -150,14 +158,15 @@ align-items: center;
         "portillom"
         "newageb"
         "lolaw"
-        "circusb";
-        align-items: center;
+        "circusb";        
         
         }
 
+
 .vinos{
-    display: grid;
+display: grid;
 gap: 5px;
+grid-template-columns: 1fr;
 grid-template-areas: 
 "vinobenja"
 "vinocafa"
@@ -167,11 +176,12 @@ grid-template-areas:
 "vinosanta"
 "vinotrummal"
 "vinotrummer";
-text-align: center;
+
 }
 .champagne{
     display: grid;
 gap: 5px;
+grid-template-columns: 1fr;
 grid-template-areas: 
 "champch"
 "champcr"
@@ -181,12 +191,13 @@ grid-template-areas:
 "champnor"
 "champnove"
 "champruti";
-text-align: center;
+
 
 }
 .destilados{
-    display: grid;
+display: grid;
 gap: 5px;
+grid-template-columns: 1fr;
 grid-template-areas: 
 "ginb"
 "ginal"
@@ -196,7 +207,6 @@ grid-template-areas:
 "whiskyfire"
 "whiskyjack"
 "whiskyred";
-text-align: center;
 }
 
 }

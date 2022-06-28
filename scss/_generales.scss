@@ -7,6 +7,9 @@ header{
     .logo{
         height: 60px;
         width: 60px;
+        border-radius: 1.8rem;
+        
+
     }
 
     a:hover{
@@ -17,11 +20,41 @@ header{
         border-color: $color1;
     }
 }
+.fondoImg{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 3s;
+    
+    
 
+}
+.fondoImg:hover{
+    transform: scale(1.2);
+}
+.descripcion{
+    background-color:$color3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart{
+    
+    font-family: 'Work Sans', sans-serif;
+    font-size: larger;
+    background-color: $color1;
+    color:$color4;
+}
+.precio{
+    color:$color4;
+}
 footer{
     background: $color3 ;
-    color: white;
+    color: $color4;
     font-family: 'Kanit', sans-serif;
+    margin-top: 3px;
     margin-bottom: 0;
     padding: 20px;
 
@@ -31,12 +64,20 @@ footer{
     .ubicacion{
         grid-area: ubicacion;
     }
+    .iconos img {
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        height: 3rem;
+        width: 3rem;
+        margin: 4px 4px;
+        grid-area: iconos;
+    }
 }
 .footer{
     display: grid;
-    grid-template-columns:1fr 1fr ;
+    grid-template-columns:1fr 1fr 1fr ;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "horarios ubicacion";
+    "horarios ubicacion iconos";
     align-items: center;
 }

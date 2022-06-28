@@ -9,6 +9,7 @@ header #navbar {
 header .logo {
   height: 60px;
   width: 60px;
+  border-radius: 1.8rem;
 }
 
 header a:hover {
@@ -20,10 +21,59 @@ header a {
   border-color: #8a1eee;
 }
 
+.fondoImg {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.fondoImg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.descripcion {
+  background-color: #353536;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart {
+  font-family: 'Work Sans', sans-serif;
+  font-size: larger;
+  background-color: #8a1eee;
+  color: white;
+}
+
+.precio {
+  color: white;
+}
+
 footer {
   background: #353536;
   color: white;
   font-family: 'Kanit', sans-serif;
+  margin-top: 3px;
   margin-bottom: 0;
   padding: 20px;
 }
@@ -40,14 +90,25 @@ footer .ubicacion {
   grid-area: ubicacion;
 }
 
+footer .iconos img {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  height: 3rem;
+  width: 3rem;
+  margin: 4px 4px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: iconos;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: "horarios ubicacion";
+      grid-template-areas: "horarios ubicacion iconos";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -62,71 +123,67 @@ footer .ubicacion {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "gaton lolab mumm circusm" "portillom newageb lolaw circusb";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .gatoNegro {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: gaton;
+  border: 3px solid #8a1eee;
 }
 
 .lolaBlend {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: lolab;
+  border: 3px solid #8a1eee;
 }
 
 .chaMumm {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: mumm;
+  border: 3px solid #8a1eee;
 }
 
 .portilloM {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: portillom;
+  border: 3px solid #8a1eee;
 }
 
 .newageBlanco {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: newageb;
+  border: 3px solid #8a1eee;
 }
 
 .lolaWhite {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: lolaw;
+  border: 3px solid #8a1eee;
 }
 
 .circusMalbec {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: circusm;
+  border: 3px solid #8a1eee;
 }
 
 .circusBlanco {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: circusb;
+  border: 3px solid #8a1eee;
 }
 
 .imgPromo {
   height: 450px;
   width: 180px;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
-}
-
-.imgPromo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .vinos {
@@ -147,62 +204,61 @@ footer .ubicacion {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: vinobenja;
+  border: 3px solid #8a1eee;
 }
 
 .vinoCafayate {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: vinocafa;
+  border: 3px solid #8a1eee;
 }
 
 .vinoDonvalentin {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: vinodon;
+  border: 3px solid #8a1eee;
 }
 
 .vinoLuigiboscamalbec {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: vinoluigi;
+  border: 3px solid #8a1eee;
 }
 
 .vinoRutini {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: vinoruti;
+  border: 3px solid #8a1eee;
 }
 
 .vinoSantajulia {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: vinosanta;
+  border: 3px solid #8a1eee;
 }
 
 .vinoTrumpetermalbec {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: vinotrummal;
+  border: 3px solid #8a1eee;
 }
 
 .vinoTrumpetermerlot {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: vinotrummer;
+  border: 3px solid #8a1eee;
 }
 
 .imgVinos {
   height: 400px;
   width: 180px;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
-}
-
-.imgVinos:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .champagne {
@@ -223,62 +279,61 @@ footer .ubicacion {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: champch;
+  border: 3px solid #8a1eee;
 }
 
 .champagneCristal {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: champcr;
+  border: 3px solid #8a1eee;
 }
 
 .champagneDada {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: champdada;
+  border: 3px solid #8a1eee;
 }
 
 .champagneFederico {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: champfe;
+  border: 3px solid #8a1eee;
 }
 
 .champagneLachapelle {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: champla;
+  border: 3px solid #8a1eee;
 }
 
 .champagneNorton {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: champnor;
+  border: 3px solid #8a1eee;
 }
 
 .champagneNovecento {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: champnove;
+  border: 3px solid #8a1eee;
 }
 
 .champagneRutini {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: champruti;
+  border: 3px solid #8a1eee;
 }
 
 .imgChampagne {
   height: 400px;
   width: 180px;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
-}
-
-.imgChampagne:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .destilados {
@@ -299,62 +354,61 @@ footer .ubicacion {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: ginb;
+  border: 3px solid #8a1eee;
 }
 
 .ginAlquimista {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: ginal;
+  border: 3px solid #8a1eee;
 }
 
 .ginHendricks {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: ginhen;
+  border: 3px solid #8a1eee;
 }
 
 .ginTanqueray {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: gintan;
+  border: 3px solid #8a1eee;
 }
 
 .whiskyChivas {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: whiskych;
+  border: 3px solid #8a1eee;
 }
 
 .whiskyJack {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: whiskyjack;
+  border: 3px solid #8a1eee;
 }
 
 .whiskeyFireball {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: whiskyfire;
+  border: 3px solid #8a1eee;
 }
 
 .whiskeyRed {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: whiskyred;
+  border: 3px solid #8a1eee;
 }
 
 .imgDestilados {
   height: 400px;
   width: 180px;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
-}
-
-.imgDestilados:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 * {
@@ -415,6 +469,11 @@ h2 {
   margin-left: 20px;
 }
 
+.NombItem {
+  color: #8a1eee;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
 @media (max-width: 700px) {
   .imgCarousel {
     height: 100px;
@@ -436,9 +495,6 @@ h2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "gaton lolab " "mumm circusm" "portillom newageb" "lolaw circusb";
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .vinos {
     display: -ms-grid;
@@ -447,9 +503,6 @@ h2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "vinobenja vinocafa" "vinodon vinoluigi" "vinoruti vinosanta" "vinotrummal vinotrummer";
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .champagne {
     display: -ms-grid;
@@ -458,9 +511,6 @@ h2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "champch champcr " "champdada champfe" "champla champnor " "champnove champruti";
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .destilados {
     display: -ms-grid;
@@ -469,9 +519,6 @@ h2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "ginb ginal " "ginhen gintan" "whiskych whiskyfire" "whiskyjack  whiskyred";
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -492,32 +539,34 @@ h2 {
   .promos {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     gap: 5px;
         grid-template-areas: "gaton" "lolab" "mumm" "circusm" "portillom" "newageb" "lolaw" "circusb";
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .vinos {
     display: -ms-grid;
     display: grid;
     gap: 5px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "vinobenja" "vinocafa" "vinodon" "vinoluigi" "vinoruti" "vinosanta" "vinotrummal" "vinotrummer";
-    text-align: center;
   }
   .champagne {
     display: -ms-grid;
     display: grid;
     gap: 5px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "champch" "champcr" "champdada" "champfe" "champla" "champnor" "champnove" "champruti";
-    text-align: center;
   }
   .destilados {
     display: -ms-grid;
     display: grid;
     gap: 5px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "ginb" "ginal" "ginhen" "gintan" "whiskych" "whiskyfire" "whiskyjack" "whiskyred";
-    text-align: center;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
